@@ -1,0 +1,21 @@
+<div class="p2 col col-12 clearfix">
+	<!-- begin loading spinner -->
+	<div data-ng-hide="loaded" class="absolute top-0 right-0 bottom-0 left-0 center flex flex-center z1">
+		<spinner class="mx-auto blue"></spinner>
+	</div>
+	<!-- end loading spinner -->
+
+	<!-- begin rooms container -->
+	<div class="mxn1 clearfix">
+		<!-- begin room wrapper -->
+		<div data-ng-repeat="room in rooms" class="p1 col col-3 relative z2 animate-repeat" style="-webkit-transition-delay:{{$index * 25}}ms">
+			<!-- begin room button-->
+			<div data-ng-click="chooseRoom(room.id, room.number)" class="h3 center btn btn-primary p2 py3 col col-12 black bg-gray-light border-rad">
+				{{room.firstname}}
+			</div>
+			<!-- end room button-->
+		</div>
+		<!-- end room wrapper -->
+	</div>
+	<!-- end rooms container -->
+</div>

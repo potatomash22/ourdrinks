@@ -1,0 +1,21 @@
+<div class="p2 col col-12 clearfix">
+	<!-- begin loading spinner -->
+	<div data-ng-hide="loaded" class="absolute top-0 right-0 bottom-0 left-0 center flex flex-center z1">
+		<spinner class="mx-auto blue"></spinner>
+	</div>
+	<!-- end loading spinner -->
+
+	<!-- begin drinks container -->
+	<div class="mxn1 clearfix">
+		<!-- begin drink wrapper -->
+		<div data-ng-repeat="drink in drinks track by $index" class="p1 col col-2 relative z2 relative overflow-hidden animate-repeat" style="-webkit-transition-delay:{{$index * 20}}ms">
+			<!-- begin drink button-->
+			<div data-ng-click="" class="h3 center col col-12 black bg-gray-light border-rad ripple" style="padding:0;">
+				<img data-ng-src="assests/product_img/{{drink.imageurl}}" alt="{{drink.title}}" class="block" />
+			</div>
+			<!-- end drink button-->
+		</div>
+		<!-- end drink wrapper -->
+	</div>
+	<!-- end drinks container -->
+</div>

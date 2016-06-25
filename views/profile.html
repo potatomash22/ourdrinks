@@ -1,0 +1,30 @@
+<div class="p2 col col-12 clearfix">
+	<!-- begin loading spinner -->
+	<div data-ng-hide="loaded" class="absolute top-0 right-0 bottom-0 left-0 center flex flex-center z1">
+		<spinner class="mx-auto blue"></spinner>
+	</div>
+	<!-- end loading spinner -->
+
+	<!-- begin order table -->
+	<table ng-show="loaded" class="teal-light table border-rad">
+		<thead>
+			<tr class="black bg-teal-light border-none">
+				<th>#</th>
+				<th>Price</th>
+				<th>Date</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr data-ng-repeat="order in orders" class="black border-none">
+				<td>{{order.id}}</td>
+				<td>{{order.price | currency}}</td>
+				<td>{{order.date | date:'medium'}}</td>
+				<td class="clearfix">
+					<div data-ng-click="" class="h5 right btn btn-primary inline-block">Details</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- end order table -->
+</div>

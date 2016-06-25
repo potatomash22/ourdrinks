@@ -1,0 +1,70 @@
+/*
+  
+*/
+* {
+  font-family: "alwyn-new-rounded-web";
+}
+
+/* Pointer cursor all ng-clicks */
+*[data-ng-click] {
+    cursor: pointer;
+}
+
+
+/* Extend Basecss */
+.btn {
+	font-weight: 500;
+}
+
+.bg-teal-light {
+	background-color: #d7ebf8;
+}
+
+.bg-gray-light {
+	background-color: #eaedf5;
+}
+
+.blue {
+	color: #06c;
+}
+
+.teal-light {
+	color: #d7ebf8;
+}
+
+/* Tables */
+.table {
+	border: 2px solid currentColor;
+}
+
+.table tr:nth-child(2n) {
+    background: #f6f9fb;
+}
+
+.table td {
+	vertical-align: middle;
+}
+
+/* Custom classes*/
+.border-rad {
+	border-radius: 2px;
+}
+
+.not-visible {
+	opacity: 0;
+}
+
+.ink {
+	display: block; 
+	position: absolute;
+	background: hsl(180, 40%, 80%);
+	border-radius: 100%;
+	transform: scale(0);
+}
+
+/*animation effect*/
+.ink.animate {animation: ripple 0.65s linear;}
+@keyframes ripple {
+	/*scale the element to 250% to safely cover the entire link and fade it out*/
+	100% {opacity: 0; transform: scale(2.5);}
+}

@@ -1,0 +1,19 @@
+<div data-ng-controller="HeaderController" class="h3 bold p2 bg-teal-light blue">
+	<!-- begin inner wrapper -->
+	<div data-ng-show="headerVisible" data-ng-animate="'animate'" class="flex flex-justify animate-show">
+		<!-- begin back button -->
+		<div data-ng-click="back()" class="">Back</div>
+		<!-- end back button -->
+
+		<!-- begin room number -->
+		<div class="">
+			Room <span data-ng-bind="room.number" class="ng-binding"></span>
+		</div>
+		<!-- end room number -->
+
+		<!-- begin profile button -->
+		<div data-ng-click="goProfile()" data-ng-class="{'not-visible': viewlevel == 2}" class="">Profile</div>
+		<!-- end profile button -->
+	</div>
+	<!-- end inner wrapper -->
+</div>
